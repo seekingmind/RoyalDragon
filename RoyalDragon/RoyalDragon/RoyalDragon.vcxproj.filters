@@ -27,9 +27,18 @@
     <ClInclude Include="src\RoyalDragon\EntryPoint.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\RoyalDragon\Core\Log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\RoyalDragon\Core\Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RoyalDragon\Core\Log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RoyalDragon\Core\Core.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

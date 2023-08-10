@@ -5,7 +5,7 @@ class StartApp : public RoyalDragon::Application
 public:
 	StartApp()
 	{
-
+		RD_TRACE("StartApp Hello!");
 	}
 
 	~StartApp()

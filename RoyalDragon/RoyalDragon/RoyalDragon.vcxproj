@@ -112,6 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RD_PLATEFORM_WINDOWS;ROYALDRAGON_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)RoyalDragon\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,6 +127,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RD_PLATEFORM_WINDOWS;ROYALDRAGON_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)RoyalDragon\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,10 +140,13 @@
     <ClInclude Include="src\RoyalDragon.h" />
     <ClInclude Include="src\RoyalDragon\Core\Application.h" />
     <ClInclude Include="src\RoyalDragon\Core\Core.h" />
+    <ClInclude Include="src\RoyalDragon\Core\Log.h" />
     <ClInclude Include="src\RoyalDragon\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\RoyalDragon\Core\Application.cpp" />
+    <ClCompile Include="src\RoyalDragon\Core\Core.cpp" />
+    <ClCompile Include="src\RoyalDragon\Core\Log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
