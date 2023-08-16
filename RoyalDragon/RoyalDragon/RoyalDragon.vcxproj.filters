@@ -22,6 +22,12 @@
     <ClInclude Include="src\RoyalDragon\EntryPoint.h">
       <Filter>RoyalDragon</Filter>
     </ClInclude>
+    <ClInclude Include="src\RoyalDragon\Core\Window.h" />
+    <ClInclude Include="src\RoyalDragon\Core\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\RoyalDragon\Core\Events\Event.h" />
+    <ClInclude Include="src\RoyalDragon\Core\Events\KeyEvent.h" />
+    <ClInclude Include="src\RoyalDragon\Core\Events\MouseEvent.h" />
+    <ClInclude Include="src\RoyalDragon\Plateform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\RoyalDragon\Core\Application.cpp">
@@ -33,5 +39,7 @@
     <ClCompile Include="src\RoyalDragon\Core\Log.cpp">
       <Filter>RoyalDragon\Core</Filter>
     </ClCompile>
+    <ClCompile Include="src\RoyalDragon\Core\Window.cpp" />
+    <ClCompile Include="src\RoyalDragon\Plateform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

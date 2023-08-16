@@ -27,6 +27,5 @@ namespace RoyalDragon {
 
 	void WindowsWindow::Shutdown()
 	{
-		Window::Shutdown();
 	}
 }
