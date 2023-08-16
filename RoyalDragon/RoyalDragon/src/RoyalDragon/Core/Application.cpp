@@ -11,6 +11,9 @@ namespace RoyalDragon {
 
 	void Application::Run()
 	{
-		while (true);
+		while (true)
+		{
+
+		}
 	}
 }

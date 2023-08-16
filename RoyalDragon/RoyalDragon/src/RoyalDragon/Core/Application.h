@@ -11,6 +11,10 @@ namespace RoyalDragon {
 		virtual ~Application();
 		
 		void Run();
+
+		virtual void onInit() {}
+		virtual void onUpdate() {}
+		virtual void onShutdown() {}
 	private:
 		
 	};
