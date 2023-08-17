@@ -1,6 +1,7 @@
 #pragma once
 
 #include "RoyalDragon/Core/Window.h"
+#include <GLFW/glfw3.h>
 
 namespace RoyalDragon {
 
@@ -13,14 +14,26 @@ namespace RoyalDragon {
 		void OnUpdate() override;
 
 		inline void SetEventCallback(const EventCallbackFn& callback) override { m_EventCallbackFn = callback; }
-		inline unsigned int GetWidth() const override { return m_Width; }
-		inline unsigned int GetHeight() const override { return m_Height; }
+		void SetVSync(bool enabled);
+		bool IsVSync() const;
+		
+		inline unsigned int GetWidth() const override { return m_Data.Width; }
+		inline unsigned int GetHeight() const override { return m_Data.Height; }
 	private:
 		virtual void Init(const WindowProps& props);
 		virtual void Shutdown();
 	private:
-		std::string m_Title;
-		unsigned int m_Width, m_Height;
+		GLFWwindow* m_Window;
 		EventCallbackFn m_EventCallbackFn;
+		
+		struct WindowData
+		{
+			std::string Title;
+			unsigned int Width;
+			unsigned int Height;
+			bool VSync;
+		};
+		
+		WindowData m_Data;
 	};
 }

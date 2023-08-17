@@ -2,5 +2,7 @@
 #include "Window.h"
 
 namespace RoyalDragon{
-	
+    Window::~Window()
+    {
+    }
 }
