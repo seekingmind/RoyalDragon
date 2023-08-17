@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../Core/Window.h"
+#include "RoyalDragon/Core/Window.h"
 
 namespace RoyalDragon {
 

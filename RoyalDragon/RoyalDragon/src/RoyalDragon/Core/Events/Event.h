@@ -1,7 +1,6 @@
 #pragma once
 
-#include <functional>
-#include "../Core.h"
+#include "rdpch.h"
 
 namespace RoyalDragon {
 	enum class EventType

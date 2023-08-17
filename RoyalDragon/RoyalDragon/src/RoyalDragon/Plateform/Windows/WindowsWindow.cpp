@@ -1,3 +1,4 @@
+#include "rdpch.h"
 #include "WindowsWindow.h"
 
 namespace RoyalDragon {

@@ -1,6 +1,4 @@
-#include "Core.h"
-#include "Log.h"
-#include <Windows.h>
+#include "rdpch.h"
 
 #define ROYALDRAGON_BUILD_ID "v0.1a"
 

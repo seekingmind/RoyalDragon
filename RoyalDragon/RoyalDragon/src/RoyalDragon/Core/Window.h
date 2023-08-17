@@ -1,10 +1,6 @@
 #pragma once
 
-#include <functional>
-
-#include "Core.h"
-#include "Events/Event.h"
-#include <string>
+#include "rdpch.h"
 
 namespace RoyalDragon {
 	struct WindowProps

@@ -19,6 +19,9 @@ project "RoyalDragon"
     targetdir("bin/" .. outputdir .. "/%{prj.name}")
     objdir("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "rdpch.h"
+    pchsource "RoyalDragon/src/rdpch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",

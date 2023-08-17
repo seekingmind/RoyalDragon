@@ -1,6 +1,4 @@
-#include "Log.h"
-
-#include <memory>
+#include "rdpch.h"
 
 namespace RoyalDragon {
 	std::shared_ptr<spdlog::logger> Log::s_CoreLogger;

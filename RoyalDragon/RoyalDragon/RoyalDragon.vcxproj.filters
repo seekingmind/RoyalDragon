@@ -7,6 +7,15 @@
     <Filter Include="RoyalDragon\Core">
       <UniqueIdentifier>{BFA25CFD-AB9B-7B4F-D4CD-60D4C0255B5B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RoyalDragon\Core\Events">
+      <UniqueIdentifier>{C3E12597-2F19-6E2E-3823-D251A4D99427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RoyalDragon\Plateform">
+      <UniqueIdentifier>{004A648B-6CB6-1F86-35AA-B7E3A1D541EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RoyalDragon\Plateform\Windows">
+      <UniqueIdentifier>{3AF41B2E-A60C-0358-6FB9-92F1DB9097F1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RoyalDragon.h" />
@@ -16,18 +25,31 @@
     <ClInclude Include="src\RoyalDragon\Core\Core.h">
       <Filter>RoyalDragon\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\RoyalDragon\Core\Events\ApplicationEvent.h">
+      <Filter>RoyalDragon\Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoyalDragon\Core\Events\Event.h">
+      <Filter>RoyalDragon\Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoyalDragon\Core\Events\KeyEvent.h">
+      <Filter>RoyalDragon\Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoyalDragon\Core\Events\MouseEvent.h">
+      <Filter>RoyalDragon\Core\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\RoyalDragon\Core\Log.h">
+      <Filter>RoyalDragon\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoyalDragon\Core\Window.h">
       <Filter>RoyalDragon\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\RoyalDragon\EntryPoint.h">
       <Filter>RoyalDragon</Filter>
     </ClInclude>
-    <ClInclude Include="src\RoyalDragon\Core\Window.h" />
-    <ClInclude Include="src\RoyalDragon\Core\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\RoyalDragon\Core\Events\Event.h" />
-    <ClInclude Include="src\RoyalDragon\Core\Events\KeyEvent.h" />
-    <ClInclude Include="src\RoyalDragon\Core\Events\MouseEvent.h" />
-    <ClInclude Include="src\RoyalDragon\Plateform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\RoyalDragon\Plateform\Windows\WindowsWindow.h">
+      <Filter>RoyalDragon\Plateform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rdpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\RoyalDragon\Core\Application.cpp">
@@ -39,7 +61,12 @@
     <ClCompile Include="src\RoyalDragon\Core\Log.cpp">
       <Filter>RoyalDragon\Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\RoyalDragon\Core\Window.cpp" />
-    <ClCompile Include="src\RoyalDragon\Plateform\Windows\WindowsWindow.cpp" />
+    <ClCompile Include="src\RoyalDragon\Core\Window.cpp">
+      <Filter>RoyalDragon\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RoyalDragon\Plateform\Windows\WindowsWindow.cpp">
+      <Filter>RoyalDragon\Plateform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdpch.cpp" />
   </ItemGroup>
 </Project>
