@@ -9,7 +9,12 @@ workspace "RoyalDragon"
         "Dist"
     }
 
-local outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
+IncludeDir = {}
+IncludeDir["GLFW"] = "RoyalDragon/vendor/GLFW/include"
+
+include "RoyalDragon/vendor/GLFW"
 
 project "RoyalDragon"
     location "RoyalDragon"
@@ -34,6 +39,13 @@ project "RoyalDragon"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include/",
+        "%{IncludeDir.GLFW}"
+    }
+    
+    links
+    {
+        "GLFW",
+        "opengl32.lib"
     }
 
     filter "system:windows"
@@ -72,9 +84,9 @@ project "StartApp"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
     
-    dependson 
-	{ 
-		"RoyalDragon"
+    links
+    {
+        "RoyalDragon"
     }
     
     files 
@@ -95,11 +107,6 @@ project "StartApp"
         cppdialect "C++17"
         staticruntime "On"
         systemversion "latest"
-        
-        links
-        {
-            "RoyalDragon"
-        }
 
         defines
         {
@@ -117,3 +124,6 @@ project "StartApp"
         filter "configurations:Dist"
             defines "RD_DIST"
             optimize "On"
+            
+        filter { "system:windows", "configurations:Release" }
+            buildoptions "/MT"  

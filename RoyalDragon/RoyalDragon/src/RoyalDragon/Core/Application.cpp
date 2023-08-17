@@ -4,6 +4,7 @@
 namespace RoyalDragon {
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -14,7 +15,7 @@ namespace RoyalDragon {
 	{
 		while (true)
 		{
-
+			m_Window->OnUpdate();
 		}
 	}
 }

@@ -10,13 +10,15 @@ namespace RoyalDragon {
 		WindowsWindow(const WindowProps& props);
 		virtual ~WindowsWindow();
 
-		void Init(const WindowProps& props);
-		void Shutdown();
+		void OnUpdate() override;
 
 		inline void SetEventCallback(const EventCallbackFn& callback) override { m_EventCallbackFn = callback; }
 		inline unsigned int GetWidth() const override { return m_Width; }
 		inline unsigned int GetHeight() const override { return m_Height; }
-	protected:
+	private:
+		virtual void Init(const WindowProps& props);
+		virtual void Shutdown();
+	private:
 		std::string m_Title;
 		unsigned int m_Width, m_Height;
 		EventCallbackFn m_EventCallbackFn;

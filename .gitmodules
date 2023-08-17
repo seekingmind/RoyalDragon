@@ -1,3 +1,6 @@
 [submodule "RoyalDragon/RoyalDragon/vendor/spdlog"]
 	path = RoyalDragon/RoyalDragon/vendor/spdlog
 	url = git@github.com:gabime/spdlog.git
+[submodule "RoyalDragon/RoyalDragon/vendor/GLFW"]
+	path = RoyalDragon/RoyalDragon/vendor/GLFW
+	url = git@github.com:TheCherno/glfw.git

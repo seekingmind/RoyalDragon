@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core.h"
+#include "Window.h"
 
 namespace RoyalDragon {
 
@@ -16,7 +17,7 @@ namespace RoyalDragon {
 		virtual void onUpdate() {}
 		virtual void onShutdown() {}
 	private:
-		
+		std::unique_ptr<Window> m_Window;
 	};
 
 	Application* CreateApplication();
