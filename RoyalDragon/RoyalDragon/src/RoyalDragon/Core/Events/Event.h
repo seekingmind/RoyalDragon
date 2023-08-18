@@ -6,10 +6,10 @@ namespace RoyalDragon {
 	enum class EventType
 	{
 		None = 0,
-		WindowClosed, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
+		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
 		AppTick, AppUpdate, AppRender,
 		KeyPressed, KeyReleased,
-		MouseButtonPressed, MouseButtonReleased, MouseMoved
+		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
 	enum EventCategory
@@ -35,6 +35,8 @@ namespace RoyalDragon {
 		virtual EventType GetEventType() const = 0;
 		virtual const char* GetName() const = 0;
 		virtual int GetCategoryFlags() const = 0;
+
+		virtual std::string ToString() const { return GetName(); }
 
 		inline bool IsInCategory(EventCategory category)
 		{
@@ -65,4 +67,9 @@ namespace RoyalDragon {
 	private:
 		Event& m_Event;
 	};
+
+	inline std::ostream& operator<<(std::ostream& os, const Event& e)
+	{
+		return os << e.ToString();
+	}
 }
