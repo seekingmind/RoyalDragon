@@ -1,6 +1,6 @@
 #pragma once
 
-#include "rdpch.h"
+#include "RoyalDragon/Core/Base.h"
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/bundled/ostream.h"
 #include "spdlog/sinks/stdout_color_sinks.h"

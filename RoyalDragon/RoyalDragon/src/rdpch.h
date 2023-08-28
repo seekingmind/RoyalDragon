@@ -16,7 +16,8 @@
 #include <unordered_set>
 #include <array>
 
-#include "RoyalDragon/Core/Core.h"
+#include "RoyalDragon/Core/Base.h"
 #include "RoyalDragon/Core/Log.h"
 #include "RoyalDragon/Core/Events/Event.h"
+#include "RoyalDragon/Core/Layer.h"
 

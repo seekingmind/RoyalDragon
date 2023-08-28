@@ -1,8 +1,9 @@
 #pragma once
 
-#include "Core.h"
+#include "Base.h"
 #include "Window.h"
 #include "RoyalDragon/Core/Events/ApplicationEvent.h"
+#include "RoyalDragon/Core/LayerStack.h"
 
 namespace RoyalDragon {
 
@@ -19,9 +20,13 @@ namespace RoyalDragon {
 		virtual void onShutdown() {}
 
 		virtual void onEvent(Event& e);
+		
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* layer);
 	private:
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
+		LayerStack m_LayerStack;
 	private:
 		bool onWindowResize(WindowResizeEvent& e);
 		bool onWindowClose(WindowCloseEvent& e);

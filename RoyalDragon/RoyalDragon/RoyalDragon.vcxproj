@@ -156,11 +156,13 @@
   <ItemGroup>
     <ClInclude Include="src\RoyalDragon.h" />
     <ClInclude Include="src\RoyalDragon\Core\Application.h" />
-    <ClInclude Include="src\RoyalDragon\Core\Core.h" />
+    <ClInclude Include="src\RoyalDragon\Core\Base.h" />
     <ClInclude Include="src\RoyalDragon\Core\Events\ApplicationEvent.h" />
     <ClInclude Include="src\RoyalDragon\Core\Events\Event.h" />
     <ClInclude Include="src\RoyalDragon\Core\Events\KeyEvent.h" />
     <ClInclude Include="src\RoyalDragon\Core\Events\MouseEvent.h" />
+    <ClInclude Include="src\RoyalDragon\Core\Layer.h" />
+    <ClInclude Include="src\RoyalDragon\Core\LayerStack.h" />
     <ClInclude Include="src\RoyalDragon\Core\Log.h" />
     <ClInclude Include="src\RoyalDragon\Core\Window.h" />
     <ClInclude Include="src\RoyalDragon\EntryPoint.h" />
@@ -169,7 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\RoyalDragon\Core\Application.cpp" />
-    <ClCompile Include="src\RoyalDragon\Core\Core.cpp" />
+    <ClCompile Include="src\RoyalDragon\Core\Base.cpp" />
+    <ClCompile Include="src\RoyalDragon\Core\Layer.cpp" />
+    <ClCompile Include="src\RoyalDragon\Core\LayerStack.cpp" />
     <ClCompile Include="src\RoyalDragon\Core\Log.cpp" />
     <ClCompile Include="src\RoyalDragon\Core\Window.cpp" />
     <ClCompile Include="src\RoyalDragon\Plateform\Windows\WindowsWindow.cpp" />

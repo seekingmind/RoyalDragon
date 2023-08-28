@@ -22,7 +22,7 @@
     <ClInclude Include="src\RoyalDragon\Core\Application.h">
       <Filter>RoyalDragon\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\RoyalDragon\Core\Core.h">
+    <ClInclude Include="src\RoyalDragon\Core\Base.h">
       <Filter>RoyalDragon\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\RoyalDragon\Core\Events\ApplicationEvent.h">
@@ -50,12 +50,14 @@
       <Filter>RoyalDragon\Plateform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\rdpch.h" />
+    <ClInclude Include="src\RoyalDragon\Core\Layer.h" />
+    <ClInclude Include="src\RoyalDragon\Core\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\RoyalDragon\Core\Application.cpp">
       <Filter>RoyalDragon\Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\RoyalDragon\Core\Core.cpp">
+    <ClCompile Include="src\RoyalDragon\Core\Base.cpp">
       <Filter>RoyalDragon\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\RoyalDragon\Core\Log.cpp">
@@ -68,5 +70,7 @@
       <Filter>RoyalDragon\Plateform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\rdpch.cpp" />
+    <ClCompile Include="src\RoyalDragon\Core\Layer.cpp" />
+    <ClCompile Include="src\RoyalDragon\Core\LayerStack.cpp" />
   </ItemGroup>
 </Project>
